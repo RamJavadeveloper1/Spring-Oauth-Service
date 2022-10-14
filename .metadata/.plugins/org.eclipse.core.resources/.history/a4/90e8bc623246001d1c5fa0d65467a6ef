@@ -1,0 +1,31 @@
+package com.springoauthservice;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+@Configuration
+@EnableWebSecurity
+
+public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
+	
+	@Bean
+	public AuthenticationProvider authProvider() {
+		DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
+		return authenticationProvider;
+	}
+
+// without database 
+//	@Bean
+//	@Override
+//	protected UserDetailsService userDetailsService() {
+//		// TODO Auto-generated method stub
+//		List<UserDetails> users = new ArrayList<>();
+//		users.add(User.withDefaultPasswordEncoder().username("ram").password("ram").roles("USER").build());
+//		return new InMemoryUserDetailsManager(users);
+//	}
+
+}

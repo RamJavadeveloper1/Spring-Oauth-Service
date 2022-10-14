@@ -1,0 +1,5 @@
+package com.springoauthservice;
+
+public class UserPrinicipal {
+
+}

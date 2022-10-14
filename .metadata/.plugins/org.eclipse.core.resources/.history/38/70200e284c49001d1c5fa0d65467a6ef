@@ -1,0 +1,5 @@
+package com.technotab.limit.configuration;
+
+public class LimitConfiguration {
+
+}

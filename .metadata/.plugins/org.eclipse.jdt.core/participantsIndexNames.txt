@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/home/ram/Documents/Eclipse-22-06-workspace/Javatechie-Microservice-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/100452305.index
+/spring-oauth-service/src/main/java
